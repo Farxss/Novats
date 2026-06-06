@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGRT Bot - Comandos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        discord: { dark: '#0f172a', card: '#1e293b', blurple: '#5865F2', green: '#57F287', yellow: '#FEE75C', red: '#ED4245' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f172a] text-slate-100 font-sans min-h-screen">
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="bg-[#0f172a] border-b border-slate-800 px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 bg-[#5865F2] rounded-full flex items-center justify-center text-white"><i class="fa-brands fa-discord"></i></div>
+            <span class="font-bold text-base">YGRT Bot</span>
+        </div>
+        <a href="https://discord.com" target="_blank" class="bg-[#5865F2] text-xs font-bold px-3 py-2 rounded-lg">Invitar Bot</a>
+    </nav>
+
+    <!-- CABECERA HERO -->
+    <header class="py-16 px-4 text-center">
+        <h1 class="text-3xl font-extrabold text-white">Lleva tu servidor al máximo nivel</h1>
+        <p class="text-slate-400 text-sm mt-2 max-w-sm mx-auto">La mejor solución de música, entretenimiento y moderación para Discord.</p>
+    </header>
+
+    <!-- COMANDOS -->
+    <main class="px-4 pb-16 max-w-xl mx-auto space-y-4">
+        <h2 class="text-lg font-bold text-slate-300">Lista de Comandos</h2>
+        
+        <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800">
+            <div class="flex justify-between text-xs text-red-400 font-semibold"><span>ADMIN</span></div>
+            <h3 class="text-base font-bold text-[#5865F2] mt-1">/ban [usuario]</h3>
+            <p class="text-slate-400 text-xs mt-1">Saca permanentemente a un usuario problemático.</p>
+        </div>
+
+        <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800">
+            <div class="flex justify-between text-xs text-green-400 font-semibold"><span>USER</span></div>
+            <h3 class="text-base font-bold text-[#5865F2] mt-1">/play [música]</h3>
+            <p class="text-slate-400 text-xs mt-1">Reproduce pistas de audio en alta calidad en tu canal de voz.</p>
+        </div>
+
+        <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800">
+            <div class="flex justify-between text-xs text-green-400 font-semibold"><span>USER</span></div>
+            <h3 class="text-base font-bold text-[#5865F2] mt-1">/meme</h3>
+            <p class="text-slate-400 text-xs mt-1">Envía un chiste o imagen graciosa de forma aleatoria.</p>
+        </div>
+    </main>
+</body>
+</html>
